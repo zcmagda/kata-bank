@@ -5,3 +5,5 @@ sudo: false
 script:
   - gradle cucumber
 
+after_success:
+- bash <(curl -s https://codecov.io/bash)
